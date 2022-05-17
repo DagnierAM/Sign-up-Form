@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="logo">
+                <img src="images/sword.png" alt="logo">
+                <h1>Scourged</h1>
+            </div>
+        </aside>
+        <main>
+            <header class="form-header">
+                <figure>
+                    <blockquote>
+                        <p>
+                            Brave Tarnished… Thy strength befits a crown.
+                        </p>
+                    </blockquote>
+                    <figcaption>Hoarath Loux</figcaption>
+                </figure>
+                <p class="subheading-p">
+                    git <em>gud</em>
+                </p>
+            </header>
+            <form action="#">
+                <div class="form-content">
+                    <h4>Let's Do This!</h4>
+                    <div class="input">
+                        <label for="first_name">FIRST NAME <abbr title="This field is mandatory"
+                                aria-label="required">*</abbr></label>
+                        <input type="text" name="first_name" id="first_name" placeholder=" " required>
+                    </div>
+                    <div class="input">
+                        <label for="last_name">LAST NAME <abbr title="This field is mandatory"
+                                aria-label="required">*</abbr></label>
+                        <input type="text" name="last_name" id="last_name" placeholder=" " required>
+                    </div>
+                    <div class="input">
+                        <label for="email">EMAIL <abbr title="This field is mandatory"
+                                aria-label="required">*</abbr></label>
+                        <input type="email" name="email" id="email" placeholder=" " required>
+                    </div>
+                    <div class="input">
+                        <label for="phone_num">PHONE NUMBER <abbr title="This field is mandatory"
+                                aria-label="required">*</abbr></label>
+                        <input type="text" name="phone_num" id="phone_num" placeholder=" " required minlength="10"
+                            maxlength="11">
+                    </div>
+                    <div class="input">
+                        <label for="password">PASSWORD <abbr title="This field is mandatory"
+                                aria-label="required">*</abbr></label>
+                        <input type="password" name="password" id="password"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder=" " required>
+                    </div>
+                    <div class="input">
+                        <label for="confirm_password">CONFIRM PASSWORD <abbr title="This field is mandatory"
+                                aria-label="required">*</abbr></label>
+                        <input type="password" name="confirm_password" id="confirm_password"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder=" " required>
+                    </div>
+                    <div class="input">
+                        <p class="pass_req">Password must:</p>
+                        <ul class="pass_req">
+                            <li>Be at least 8 characers</li>
+                            <li>contain a letter and number</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-btn">
+                    <button type="submit" class="form-submit">
+                        Create Account
+                    </button>
+                </div>
+                <footer>
+                    <p>Already have an account?</p>
+                    <a href="#">Log in</a>
+                </footer>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
